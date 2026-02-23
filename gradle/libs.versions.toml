@@ -1,22 +1,20 @@
 # Add shared library versions here if needed, e.g.:
 [versions]
-kotlin = "2.0.21"                  # Kotlin plugin version
-shadow = "9.0.0-beta6"             # Shadow plugin version
-paperweight = "1.7.7"              # Paperweight plugin version
-bukkit-factory = "1.2.0"           # resource-factory plugin version
-run-paper = "2.3.1"                # run-task plugin version
-
-paper = "1.18.2-R0.1-SNAPSHOT"     # Paper server software version
-# bstats = "3.0.2"
+kotlin = "2.3.10"                   # Kotlin plugin version
+shadow = "9.3.1"                    # Shadow plugin version
+paper = "1.21.11-R0.1-SNAPSHOT"     # Paper server software version
+bukkit-factory = "1.3.1"            # resource-factory plugin version
+run-paper = "3.0.2"                 # run-task plugin version
+bstats = "3.1.0"
 
 # Add shared libraries here if needed, e.g.:
 [libraries]
-# bstats = { module = "org.bstats:bstats-bukkit", version.ref = "bstats" }        # bStats library
+paper = { module = "io.papermc.paper:paper-api", version.ref = "paper" }
+bstats = { module = "org.bstats:bstats-bukkit", version.ref = "bstats" }        # bStats library
 
 # Add shared plugins here if needed, e.g.:
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }                                            # Kotlin JVM plugin
 shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }                                                 # Shadow plugin
-paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }                            # Paperweight plugin
 bukkit-factory = { id = "xyz.jpenilla.resource-factory-bukkit-convention", version.ref = "bukkit-factory" }     # resource-factory plugin
 run-paper = { id = "xyz.jpenilla.run-paper", version.ref = "run-paper" }                                        # run-task plugin
