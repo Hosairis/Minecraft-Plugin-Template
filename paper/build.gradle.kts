@@ -10,7 +10,8 @@ repositories {
 dependencies {
     compileOnly(libs.paper)
 
-     implementation(libs.bstats)
+    implementation(libs.bstats)
+    implementation(libs.boosted.yaml)
 }
 
 java {
@@ -28,6 +29,7 @@ tasks {
 
     shadowJar {
         relocate("org.bstats", "example.plugin.template.libs.bstats")
+        relocate("dev.dejvokep.boostedyaml", "example.plugin.template.libs.boostedyaml")
 
         archiveFileName.set("${rootProject.name}-${project.version}.jar")
         minimize()
