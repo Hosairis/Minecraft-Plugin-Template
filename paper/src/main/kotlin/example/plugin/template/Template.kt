@@ -1,6 +1,6 @@
 package example.plugin.template
 
-import example.plugin.template.storage.config.Config
+import example.plugin.template.storage.Config
 import org.bstats.bukkit.Metrics
 import org.bukkit.plugin.java.JavaPlugin
 

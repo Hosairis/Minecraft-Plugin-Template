@@ -1,4 +1,4 @@
-package example.plugin.template.storage.config
+package example.plugin.template.storage
 
 import dev.dejvokep.boostedyaml.YamlDocument
 
