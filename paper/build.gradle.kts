@@ -15,7 +15,7 @@ dependencies {
 }
 
 java {
-    toolchain.languageVersion = JavaLanguageVersion.of(21) // Use Java 17 toolchain
+    toolchain.languageVersion = JavaLanguageVersion.of(21) // Use Java 21 toolchain
 }
 
 tasks {
